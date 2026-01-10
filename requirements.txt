@@ -13,7 +13,6 @@ opencv-python
 pillow==9.5.0
 psutil
 py-tgcalls==2.2.8
-py-tgcalls>=2.2.0
 pykeyboard
 pyrofork
 python-dotenv
