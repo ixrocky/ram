@@ -6,7 +6,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from SaregamaMusic import LOGGER, app, userbot
-from SaregamaMusic.core.call import Aviax
+from SaregamaMusic.core.call import AMBOTOP
 from SaregamaMusic.misc import sudo
 from SaregamaMusic.plugins import ALL_MODULES
 from SaregamaMusic.utils.database import get_banned_users, get_gbanned
@@ -38,24 +38,24 @@ async def init():
         importlib.import_module("SaregamaMusic.plugins" + all_module)
     LOGGER("SaregamaMusic.plugins").info("Successfully Imported Modules...")
     await userbot.start()
-    await SaregamaMusic.start()
+    await AMBOTOP.start()
     try:
-        await SaregamaMusic.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
+        await AMBOTOP.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
         LOGGER("SaregamaMusic").error(
-            "Please turn on the videochat of your log group\channel.\n\nStopping Bot..."
+            "Please turn on the videochat of your log group\\channel.\n\nStopping Bot..."
         )
         exit()
     except:
         pass
-    await SaregamaMusic.decorators()
+    await AMBOTOP.decorators()
     LOGGER("SaregamaMusic").info(
-        "\x41\x76\x69\x61\x78\x20\x4d\x75\x73\x69\x63\x20\x53\x74\x61\x72\x74\x65\x64\x20\x53\x75\x63\x63\x65\x73\x73\x66\x75\x6c\x6c\x79\x2e\x0a\x0a\x44\x6f\x6e\x27\x74\x20\x66\x6f\x72\x67\x65\x74\x20\x74\x6f\x20\x76\x69\x73\x69\x74\x20\x40\x4e\x65\x78\x47\x65\x6e\x42\x6f\x74\x73"
+        "saregama music started"
     )
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("SaregamaMusic").info("Stopping Saregama Music Bot...")
+    LOGGER("SaregamaMusic").info("Stopping AMBOTOP Music Bot...")
 
 
 if __name__ == "__main__":
