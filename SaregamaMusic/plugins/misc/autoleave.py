@@ -1,7 +1,7 @@
 import asyncio
 from datetime import datetime
 from pyrogram.enums import ChatType
-from pytgcalls.exceptions import GroupCallNotFound
+from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from SaregamaMusic import app
 from SaregamaMusic.misc import db
