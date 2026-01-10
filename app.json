@@ -1,11 +1,10 @@
-
 {
 
-    "name": "SAREGAMA Music",
+    "name": "Saregama Music",
 
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
 
-    "logo": "https://graph.org/file/c61b0474536561616b0a9-88166664659d4173c9.jpg",
+    "logo": "https://telegra.ph/Aviax-02-24",
 
     "keywords": [
 
@@ -15,7 +14,7 @@
 
     "bot",
 
-    "SAREGAMA",
+    "Aviax",
 
     "MusicBot",
 
@@ -31,7 +30,7 @@
 
         "description": "Get this value from https://my.telegram.org",
 
-        "value": "29246748",
+        "value": "",
 
         "required": true
 
@@ -41,7 +40,7 @@
 
         "description": "Get this value from https://my.telegram.org",
 
-        "value": "2f53a2413a205c48b3a9a9b0a701e656",
+        "value": "",
 
         "required": true
 
@@ -71,7 +70,7 @@
 
         "description": "The user id of user whom you would like to add as OWNER.",
 
-        "value": "7668543228",
+        "value": "",
 
         "required": true
 
@@ -101,9 +100,19 @@
 
         "description": "Your heroku app name",
 
-        "value": "Amazon",
+        "value": "",
 
         "required": false
+
+      },
+
+      "API_KEY": {
+
+        "description": "Your API key from console.nexgenbots.xyz",
+
+        "value": "",
+
+        "required": true
 
       },
 
@@ -111,7 +120,7 @@
 
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Do not ever try to put channel ID here.",
 
-        "value":"",
+        "value": "",
 
         "required": true
 
